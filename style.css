@@ -11,12 +11,12 @@ body{
     height: 100vh;
 }
 .logo{
-    display: inline-block;
     background: linear-gradient(to right,white ,rgb(52, 176, 198),rgb(205, 52, 149));
-    /* background-clip: text;
-    -webkit-text-fill-color: transparent; */
     width: 50px;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header{
     display: flex;
@@ -32,7 +32,7 @@ body{
 .main{
     width: 100%;
     min-height:90vh;
-    background: #8d7f7f;
+    background: #374054;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -43,7 +43,10 @@ body{
   max-width: 500px;
   width: 90%;
   height: 500px;
-  background: #afacac;
+  background: #374054;
+  display: flex;
+  align-items: start;
+  justify-content: center;
 }
 .style2{
     max-width: 500px;
@@ -51,3 +54,31 @@ body{
     height: 500px;
     background: #b6afaf;
   }
+.image{
+    width: 300px;
+    height: 395px;
+    background-image: url("transparent.png");
+    display: flex;
+    position: relative;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.8),-2px -2px 10px rgba(0,0,0,0.8);
+}
+.image1{
+    animation: remove 15s linear infinite;
+    overflow: hidden;
+}
+.image2{
+    position:absolute;
+    overflow: hidden;
+
+}
+@keyframes remove{
+    0%{
+        width: 100%;
+    }
+    50%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
