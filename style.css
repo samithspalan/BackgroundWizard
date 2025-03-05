@@ -9,7 +9,6 @@ body{
     padding: 2em;
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
 }
 .logo{
     background: linear-gradient(to right,white ,rgb(52, 176, 198),rgb(205, 52, 149));
@@ -30,6 +29,7 @@ body{
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .main{
     width: 100%;
     min-height:90vh;
@@ -53,6 +53,9 @@ body{
     max-width: 500px;
     width: 90%;
     height: 500px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
   }
 .image{
     width: 305px;
@@ -85,7 +88,7 @@ body{
     }
 }
 .upload-image{
-   width: 70%;
+   width: 75%;
    height: 90%;
    color: white;
    display: flex;
@@ -99,12 +102,37 @@ body{
 }
 .inner-image{
     height: 70%;
-    width: 90%;
-    background: #4c4949;
+    width: 80%;
     display: flex;
+   box-shadow: 1px 1px 5px rgba(0,0,0,0.4),-1px -1px 5px rgba(0,0,0,0.4);
+   border-radius: 20px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 10px;
     font-size: 20px;
+    cursor: pointer;
+}
+.inner-image:hover{
+    box-shadow: inset 2px 2px 10px rgba(0,0,0,0.3),-2px -2px 10px rgba(0,0,0,0.3);
+    background: #3e4759;
+}
+#input-image{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.btn{
+    background: linear-gradient(to right,rgb(70, 129, 211) ,rgb(221, 53, 185),rgb(208, 26, 59));
+    height: 40px;
+    width: 100px; 
+    font-size: large;
+    box-shadow:inset 2px 2px 10px rgba(0,0,0,0.8),-2px -2px 10px rgba(0,0,0,0.8);
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn:hover{
+    background: linear-gradient(to left,rgb(70, 129, 211) ,rgb(221, 53, 185),rgb(208, 26, 59));
+    font-size: larger;
 }
