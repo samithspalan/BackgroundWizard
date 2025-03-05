@@ -16,17 +16,6 @@ function handleupload(){
    }
 
    
-   const formdata=new FormData();
-   formdata.append("image_file", image);  
-   formdata.append("size", "auto");
-
-   fetch("https://api.remove.bg/v1.0/removebg", {
-      method: "POST",
-      headers: { 
-         "X-Api-Key": api
-      },
-      body: formdata
-   })
    .then(function(response){
        if (!response.ok) {
            return response.json().then(error => Promise.reject(error));
