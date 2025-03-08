@@ -31,6 +31,7 @@ Watch the project demo on YouTube: [BackgroundWizard - Demo](https://youtu.be/Og
 - HTML
 - CSS
 - JavaScript
+- API
 
 ## Repository
 Explore the code and contribute on GitHub: [BackgroundWizard Repository](https://github.com/samithspalan/BackgroundWizard)
